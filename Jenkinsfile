@@ -1,12 +1,12 @@
-node(''){
+node {
     currentBuild.result = "SUCCESS"
     stage('Printing hello world'){
         sh 'echo "Hello World"'
     stage('unit test'){
         sh 'echo "unit test has started"'
     stage('system test'){
-        sh 'system test has started"'
+        sh 'echo "system test has started"'
     stage('integration test'){
-        sh 'integration test has started"'
+        sh 'echo "integration test has started"'
     }
 }
